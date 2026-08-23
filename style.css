@@ -878,11 +878,371 @@ footer{
         0 10px 30px rgba(212,178,106,.25);
 
 }
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
 @media (max-width: 768px) {
+
+    /* ==========================
+       Navbar
+    ========================== */
+
+    .navbar {
+
+        top:12px;
+
+        width:94%;
+
+        padding:14px 18px;
+
+        border-radius:14px;
+
+    }
+
+    .navbar.active {
+
+        padding:12px 18px;
+
+    }
+
+    .logo {
+
+        font-size:14px;
+
+        letter-spacing:3px;
+
+    }
+
+    .nav-links {
+
+        gap:14px;
+
+    }
+
+    .nav-links a {
+
+        font-size:11px;
+
+    }
+
+
+    /* ==========================
+       Hero
+    ========================== */
+
+    .hero {
+
+        min-height:100svh;
+
+        background-position:center;
+
+    }
+
+    .hero-content {
+
+        width:100%;
+
+        padding:120px 25px 70px;
+
+        justify-content:center;
+
+        align-items:flex-start;
+
+    }
+
+    .hero-left {
+
+        width:100%;
+
+        max-width:none;
+
+    }
+
+    .subtitle {
+
+        font-size:11px;
+
+        letter-spacing:3px;
+
+        margin-bottom:18px;
+
+    }
+
+    .hero-content h1 {
+
+        font-size:52px;
+
+        line-height:.95;
+
+        letter-spacing:3px;
+
+        margin-bottom:25px;
+
+    }
+
+    .description {
+
+        max-width:100%;
+
+        font-size:15px;
+
+        line-height:1.7;
+
+    }
+
+
+    /* ==========================
+       Buttons
+    ========================== */
+
+    .buttons {
+
+        margin-top:35px;
+
+        gap:12px;
+
+        flex-wrap:wrap;
+
+    }
+
+    .btn,
+    .btn-outline {
+
+        padding:12px 22px;
+
+        font-size:13px;
+
+    }
+
+
+    /* ==========================
+       About
+    ========================== */
+
+    .about {
+
+        min-height:auto;
+
+        padding:100px 25px;
+
+    }
+
+    .about::before {
+
+        top:-100px;
+
+        height:100px;
+
+    }
+
+    .container {
+
+        max-width:100%;
+
+    }
+
+    .about h2 {
+
+        font-size:36px;
+
+        line-height:1.1;
+
+        margin-bottom:25px;
+
+    }
+
+    .about p {
+
+        font-size:16px;
+
+        line-height:1.8;
+
+        text-align:left;
+
+    }
+
+
+    /* ==========================
+       Works
+    ========================== */
+
+    .works {
+
+        min-height:auto;
+
+        padding:100px 25px;
+
+    }
+
+    .works::before {
+
+        top:-100px;
+
+        height:100px;
+
+    }
+
+    .works h2 {
+
+        font-size:36px;
+
+        margin-bottom:40px;
+
+    }
+
+    .works-grid {
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .card {
+
+        padding:28px 24px;
+
+        border-radius:14px;
+
+    }
+
+    .card h3 {
+
+        font-size:19px;
+
+        line-height:1.4;
+
+        margin-bottom:12px;
+
+    }
+
+    .card p {
+
+        font-size:14px;
+
+    }
+
+
+    /* ==========================
+       Research
+    ========================== */
+
+    .research {
+
+        min-height:auto;
+
+        padding:100px 25px;
+
+    }
+
+    .research::before {
+
+        top:-100px;
+
+        height:100px;
+
+    }
+
+    .research h2 {
+
+        font-size:36px;
+
+        margin-bottom:40px;
+
+    }
+
+    .research-grid {
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .research-card {
+
+        padding:28px 24px;
+
+        border-radius:14px;
+
+    }
+
+    .research-card h3 {
+
+        font-size:19px;
+
+    }
+
+    .research-card p {
+
+        font-size:15px;
+
+        line-height:1.7;
+
+    }
+
+
+    /* ==========================
+       Events
+    ========================== */
+
+    .events {
+
+        padding:100px 25px;
+
+    }
+
+    .events h2 {
+
+        font-size:36px;
+
+        margin-bottom:40px;
+
+    }
+
+    .event {
+
+        width:100%;
+
+        margin:20px 0;
+
+        padding:25px 20px;
+
+    }
+
+    .event h3 {
+
+        font-size:18px;
+
+        margin-bottom:10px;
+
+    }
+
+    .event p {
+
+        font-size:14px;
+
+        line-height:1.7;
+
+    }
+
+
+    /* ==========================
+       Contact
+    ========================== */
 
     .contact {
 
-        padding:120px 30px 80px;
+        padding:110px 25px 80px;
+
+    }
+
+    .contact::before {
+
+        top:-100px;
+
+        height:100px;
 
     }
 
@@ -890,23 +1250,106 @@ footer{
 
         grid-template-columns:1fr;
 
-        gap:70px;
+        gap:60px;
+
+    }
+
+    .contact-label {
+
+        font-size:11px;
+
+        letter-spacing:3px;
+
+        margin-bottom:20px;
 
     }
 
     .contact h2 {
 
-        font-size:52px;
+        font-size:48px;
+
+        line-height:1;
+
+        letter-spacing:-1px;
+
+        margin-bottom:25px;
 
     }
 
     .contact-description {
 
-        font-size:16px;
+        font-size:15px;
+
+        line-height:1.8;
+
+        margin-bottom:35px;
 
     }
 
     .contact-email {
+
+        font-size:16px;
+
+        gap:10px;
+
+        max-width:100%;
+
+        word-break:break-word;
+
+    }
+
+    .contact-links {
+
+        width:100%;
+
+    }
+
+    .contact-link {
+
+        padding:18px 5px;
+
+        font-size:15px;
+
+    }
+
+
+    /* ==========================
+       Section Button
+    ========================== */
+
+    .section-button {
+
+        margin-top:40px;
+
+    }
+
+
+    /* ==========================
+       Footer
+    ========================== */
+
+    footer {
+
+        padding:30px 20px;
+
+        font-size:12px;
+
+    }
+
+
+    /* ==========================
+       Back To Top
+    ========================== */
+
+    .back-to-top {
+
+        right:18px;
+
+        bottom:18px;
+
+        width:44px;
+
+        height:44px;
 
         font-size:19px;
 
