@@ -1,8 +1,25 @@
 html,
 body {
+
     width:100%;
     max-width:100%;
+
     overflow-x:hidden;
+
+}
+*,
+*::before,
+*::after {
+
+    box-sizing:border-box;
+
+}
+
+img {
+
+    max-width:100%;
+    height:auto;
+
 }
 img {
     max-width:100%;
