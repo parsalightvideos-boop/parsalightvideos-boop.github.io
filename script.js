@@ -123,29 +123,22 @@ backToTop.addEventListener("click", function () {
 // ==========================
 // Mobile Menu
 // ==========================
+// ==========================
+// MOBILE MENU
+// ==========================
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", function () {
+if (menuToggle && navLinks) {
 
-    navLinks.classList.toggle("open");
+    menuToggle.addEventListener("click", function () {
 
-});
-links.forEach(function(link){
-
-    link.addEventListener("click", function(){
-
-        links.forEach(function(item){
-
-            item.classList.remove("active");
-
-        });
-
-        link.classList.add("active");
-
-        navLinks.classList.remove("open");
+        navLinks.classList.toggle("open");
 
     });
 
+}
 });
+console.log(menuToggle);
+console.log(navLinks);
