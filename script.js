@@ -132,3 +132,20 @@ menuToggle.addEventListener("click", function () {
     navLinks.classList.toggle("open");
 
 });
+links.forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        links.forEach(function(item){
+
+            item.classList.remove("active");
+
+        });
+
+        link.classList.add("active");
+
+        navLinks.classList.remove("open");
+
+    });
+
+});
