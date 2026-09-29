@@ -1570,19 +1570,8 @@ footer{
     }
 
 }
-a,
-button {
+button,
+a {
     -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-}
-a:focus-visible,
-button:focus-visible {
-    outline:2px solid #D4AF37;
-    outline-offset:4px;
-}
-a:active,
-a:focus,
-button:active,
-button:focus {
-    background-color: transparent;
+    outline: none;
 }
