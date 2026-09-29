@@ -1,32 +1,44 @@
 console.log("Parsa Alikhani Website");
 
+// ==========================
+// Elements
+// ==========================
+
 const navbar = document.querySelector(".navbar");
-
 const links = document.querySelectorAll(".nav-links a");
+const cards = document.querySelectorAll(".card");
 
-window.addEventListener("scroll", function(){
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-    if(window.scrollY > 50){
+const backToTop = document.querySelector("#backToTop");
 
+
+// ==========================
+// Navbar
+// ==========================
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 50) {
         navbar.classList.add("active");
-
-    }
-
-    else{
-
+    } else {
         navbar.classList.remove("active");
-
     }
 
 });
-links.forEach(function(link){
 
-    link.addEventListener("click", function(){
 
-        links.forEach(function(item){
+// ==========================
+// Active Navigation
+// ==========================
 
+links.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        links.forEach(function (item) {
             item.classList.remove("active");
-
         });
 
         link.classList.add("active");
@@ -34,111 +46,120 @@ links.forEach(function(link){
     });
 
 });
-const cards = document.querySelectorAll(".card");
 
-cards.forEach(function(card){
 
-    card.addEventListener("click", function(){
+// ==========================
+// Smooth Scroll
+// ==========================
 
-        console.log(card.querySelector("h3").textContent);
+links.forEach(function (link) {
 
-    });
+    link.addEventListener("click", function (event) {
 
-});
-const works = [
-{
-    title:"Automations No.1",
-    category:"Electroacoustic"
-},
-{
-    title:"String Quartet No.1",
-    category:"Chamber Music"
-},
-{
-    title:"Symphonic Poem No.1",
-    category:"Orchestra"
-}
-];
-const navLinks = document.querySelectorAll('a[href^="#"]');
+        const targetId = this.getAttribute("href");
 
-navLinks.forEach(link=>{
+        const target = document.querySelector(targetId);
 
-    link.addEventListener("click",function(e){
+        if (target) {
 
-        e.preventDefault();
-
-        const target=document.querySelector(this.getAttribute("href"));
-
-        if(target){
+            event.preventDefault();
 
             target.scrollIntoView({
-
-                behavior:"smooth"
-
+                behavior: "smooth",
+                block: "start"
             });
 
+        }
+
+        // Close mobile menu
+        if (navLinks) {
+            navLinks.classList.remove("open");
+        }
+
+        if (menuToggle) {
+            menuToggle.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
         }
 
     });
 
 });
+
+
 // ==========================
-// Back To Top
+// Works Cards
 // ==========================
 
-const backToTop = document.querySelector("#backToTop");
+cards.forEach(function (card) {
 
-window.addEventListener("scroll", function () {
+    card.addEventListener("click", function () {
 
-    const scrollPosition = window.scrollY;
-    const pageHeight = document.documentElement.scrollHeight;
-    const windowHeight = window.innerHeight;
+        const title = card.querySelector("h3").textContent;
 
-    const scrollPercentage =
-        (scrollPosition / (pageHeight - windowHeight)) * 100;
-
-    if (scrollPercentage > 70) {
-
-        backToTop.classList.add("show");
-
-    } else {
-
-        backToTop.classList.remove("show");
-
-    }
-
-});
-
-backToTop.addEventListener("click", function () {
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
+        console.log(title);
 
     });
 
 });
+
+
+// ==========================
+// Back To Top
+// ==========================
+
+if (backToTop) {
+
+    window.addEventListener("scroll", function () {
+
+        const scrollPosition = window.scrollY;
+        const pageHeight = document.documentElement.scrollHeight;
+        const windowHeight = window.innerHeight;
+
+        const scrollPercentage =
+            (scrollPosition / (pageHeight - windowHeight)) * 100;
+
+        if (scrollPercentage > 70) {
+
+            backToTop.classList.add("show");
+
+        } else {
+
+            backToTop.classList.remove("show");
+
+        }
+
+    });
+
+
+    backToTop.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
+
+
 // ==========================
 // Mobile Menu
 // ==========================
-// ==========================
-// MOBILE MENU
-// ==========================
-
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
 
 if (menuToggle && navLinks) {
 
     menuToggle.addEventListener("click", function () {
 
-        navLinks.classList.toggle("open");
+        const isOpen = navLinks.classList.toggle("open");
+
+        menuToggle.classList.toggle("open", isOpen);
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
 
     });
 
 }
-});
-console.log(menuToggle);
-console.log(navLinks);
