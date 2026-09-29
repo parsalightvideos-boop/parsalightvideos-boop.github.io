@@ -951,667 +951,7 @@ footer{
    MOBILE RESPONSIVE
 ================================= */
 
-@media (max-width: 768px) {
 
-    /* ==========================
-       Navbar
-    ========================== */
-
-    .navbar {
-
-        top:12px;
-
-        width:94%;
-
-        padding:14px 18px;
-
-        border-radius:14px;
-
-    }
-
-    .navbar.active {
-
-        padding:12px 18px;
-
-    }
-
-    .logo {
-
-        font-size:14px;
-
-        letter-spacing:3px;
-
-    }
-
-    .nav-links {
-
-        gap:14px;
-
-    }
-
-    .nav-links a {
-
-        font-size:11px;
-
-    }
-
-
-    /* ==========================
-       Hero
-    ========================== */
-
-    .hero {
-
-        min-height:100svh;
-
-        background-position:center;
-
-    }
-
-    .hero-content {
-
-        width:100%;
-
-        padding:120px 25px 70px;
-
-        justify-content:center;
-
-        align-items:flex-start;
-
-    }
-
-    .hero-left {
-
-        width:100%;
-
-        max-width:none;
-
-    }
-
-    .subtitle {
-
-        font-size:11px;
-
-        letter-spacing:3px;
-
-        margin-bottom:18px;
-
-    }
-
-    .hero-content h1 {
-
-        font-size:52px;
-
-        line-height:.95;
-
-        letter-spacing:3px;
-
-        margin-bottom:25px;
-
-    }
-
-    .description {
-
-        max-width:100%;
-
-        font-size:15px;
-
-        line-height:1.7;
-
-    }
-
-
-    /* ==========================
-       Buttons
-    ========================== */
-
-    .buttons {
-
-        margin-top:35px;
-
-        gap:12px;
-
-        flex-wrap:wrap;
-
-    }
-
-    .btn,
-    .btn-outline {
-
-        padding:12px 22px;
-
-        font-size:13px;
-
-    }
-
-
-    /* ==========================
-       About
-    ========================== */
-
-    .about {
-
-        min-height:auto;
-
-        padding:100px 25px;
-
-    }
-
-    .about::before {
-
-        top:-100px;
-
-        height:100px;
-
-    }
-
-    .container {
-
-        max-width:100%;
-
-    }
-
-    .about h2 {
-
-        font-size:36px;
-
-        line-height:1.1;
-
-        margin-bottom:25px;
-
-    }
-
-    .about p {
-
-        font-size:16px;
-
-        line-height:1.8;
-
-        text-align:left;
-
-    }
-
-
-    /* ==========================
-       Works
-    ========================== */
-
-    .works {
-
-        min-height:auto;
-
-        padding:100px 25px;
-
-    }
-
-    .works::before {
-
-        top:-100px;
-
-        height:100px;
-
-    }
-
-    .works h2 {
-
-        font-size:36px;
-
-        margin-bottom:40px;
-
-    }
-
-    .works-grid {
-
-        grid-template-columns:1fr;
-
-        gap:18px;
-
-    }
-
-    .card {
-
-        padding:28px 24px;
-
-        border-radius:14px;
-
-    }
-
-    .card h3 {
-
-        font-size:19px;
-
-        line-height:1.4;
-
-        margin-bottom:12px;
-
-    }
-
-    .card p {
-
-        font-size:14px;
-
-    }
-
-
-    /* ==========================
-       Research
-    ========================== */
-
-    .research {
-
-        min-height:auto;
-
-        padding:100px 25px;
-
-    }
-
-    .research::before {
-
-        top:-100px;
-
-        height:100px;
-
-    }
-
-    .research h2 {
-
-        font-size:36px;
-
-        margin-bottom:40px;
-
-    }
-
-    .research-grid {
-
-        grid-template-columns:1fr;
-
-        gap:18px;
-
-    }
-
-    .research-card {
-
-        padding:28px 24px;
-
-        border-radius:14px;
-
-    }
-
-    .research-card h3 {
-
-        font-size:19px;
-
-    }
-
-    .research-card p {
-
-        font-size:15px;
-
-        line-height:1.7;
-
-    }
-
-
-    /* ==========================
-       Events
-    ========================== */
-
-    .events {
-
-        padding:100px 25px;
-
-    }
-
-    .events h2 {
-
-        font-size:36px;
-
-        margin-bottom:40px;
-
-    }
-
-    .event {
-
-        width:100%;
-
-        margin:20px 0;
-
-        padding:25px 20px;
-
-    }
-
-    .event h3 {
-
-        font-size:18px;
-
-        margin-bottom:10px;
-
-    }
-
-    .event p {
-
-        font-size:14px;
-
-        line-height:1.7;
-
-    }
-
-
-    /* ==========================
-       Contact
-    ========================== */
-
-    .contact {
-
-        padding:110px 25px 80px;
-
-    }
-
-    .contact::before {
-
-        top:-100px;
-
-        height:100px;
-
-    }
-
-    .contact-container {
-
-        grid-template-columns:1fr;
-
-        gap:60px;
-
-    }
-
-    .contact-label {
-
-        font-size:11px;
-
-        letter-spacing:3px;
-
-        margin-bottom:20px;
-
-    }
-
-    .contact h2 {
-
-        font-size:48px;
-
-        line-height:1;
-
-        letter-spacing:-1px;
-
-        margin-bottom:25px;
-
-    }
-
-    .contact-description {
-
-        font-size:15px;
-
-        line-height:1.8;
-
-        margin-bottom:35px;
-
-    }
-
-    .contact-email {
-
-        font-size:16px;
-
-        gap:10px;
-
-        max-width:100%;
-
-        word-break:break-word;
-
-    }
-
-    .contact-links {
-
-        width:100%;
-
-    }
-
-    .contact-link {
-
-        padding:18px 5px;
-
-        font-size:15px;
-
-    }
-
-
-    /* ==========================
-       Section Button
-    ========================== */
-
-    .section-button {
-
-        margin-top:40px;
-
-    }
-
-
-    /* ==========================
-       Footer
-    ========================== */
-
-    footer {
-
-        padding:30px 20px;
-
-        font-size:12px;
-
-    }
-
-
-    /* ==========================
-       Back To Top
-    ========================== */
-
-    .back-to-top {
-
-        right:18px;
-
-        bottom:18px;
-
-        width:44px;
-
-        height:44px;
-
-        font-size:19px;
-
-    }
-
-}
-@media (max-width:768px) {
-.menu-toggle {
-    display:flex;
-}
-
-.nav-links {
-
-    position:absolute;
-
-    top:calc(100% + 10px);
-
-    left:0;
-
-    width:100%;
-
-    padding:20px;
-
-    display:flex;
-    flex-direction:column;
-
-    gap:0;
-
-    background:rgba(15,15,15,.95);
-
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
-
-    border:1px solid rgba(255,255,255,.1);
-
-    border-radius:16px;
-
-    opacity:0;
-    visibility:hidden;
-
-    transform:translateY(-10px);
-
-    transition:
-        opacity .4s ease,
-        visibility .4s ease,
-        transform .4s ease;
-
-}
-
-.nav-links.open {
-
-    opacity:1;
-
-    visibility:visible;
-
-    transform:translateY(0);
-
-}
-
-.nav-links li {
-    width:100%;
-}
-
-.nav-links a {
-
-    display:block;
-
-    padding:15px 5px;
-
-    font-size:14px;
-
-    border-bottom:1px solid rgba(255,255,255,.06);
-
-}
-
-.nav-links li:last-child a {
-    border-bottom:none;
-}
-    .navbar {
-
-        top:12px;
-
-        width:calc(100% - 30px);
-
-        padding:12px 16px;
-
-        border-radius:16px;
-
-    }
-
-    .navbar.active {
-
-        padding:12px 16px;
-
-    }
-
-    .logo {
-
-        font-size:13px;
-
-        letter-spacing:2.5px;
-
-    }
-
-    .menu-toggle {
-
-        display:flex;
-
-        position:relative;
-
-        z-index:1002;
-
-    }
-
-    .nav-links {
-
-        position:absolute;
-
-        top:calc(100% + 10px);
-
-        left:0;
-
-        width:100%;
-
-        padding:25px 20px;
-
-        display:flex;
-
-        flex-direction:column;
-
-        gap:0;
-
-        background:rgba(15,15,15,.92);
-
-        backdrop-filter:blur(20px);
-
-        -webkit-backdrop-filter:blur(20px);
-
-        border:1px solid rgba(255,255,255,.1);
-
-        border-radius:16px;
-
-        opacity:0;
-
-        visibility:hidden;
-
-        transform:translateY(-10px);
-
-        transition:
-
-            opacity .4s ease,
-
-            visibility .4s ease,
-
-            transform .5s cubic-bezier(.22,1,.36,1);
-
-    }
-
-    .nav-links li {
-
-        width:100%;
-
-    }
-
-    .nav-links a {
-
-        display:block;
-
-        padding:15px 5px;
-
-        font-size:14px;
-
-        border-bottom:1px solid rgba(255,255,255,.06);
-
-    }
-
-    .nav-links li:last-child a {
-
-        border-bottom:none;
-
-    }
-
-    .nav-links.open {
-
-        opacity:1;
-
-        visibility:visible;
-
-        transform:translateY(0);
-
-    }
-
-}
 .menu-toggle {
 
     display:none;
@@ -1703,127 +1043,526 @@ footer{
 
 
 /* MOBILE */
+@media (max-width: 768px) {
 
-@media (max-width:768px) {
-
-    .menu-toggle {
-
-        display:flex;
-
-    }
+    /* ==========================
+       Navbar
+    ========================== */
 
     .navbar {
 
-        position:fixed;
+        top: 12px;
 
-        top:12px;
+        width: calc(100% - 30px);
 
-        left:50%;
+        padding: 12px 16px;
 
-        width:calc(100% - 30px);
-
-        padding:12px 16px;
-
-        transform:translateX(-50%);
-
-        display:flex;
-
-        justify-content:space-between;
-
-        align-items:center;
-
-        z-index:9999;
+        border-radius: 16px;
 
     }
 
+    .navbar.active {
+
+        padding: 12px 16px;
+
+    }
+
+    .logo {
+
+        font-size: 13px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    /* ==========================
+       Menu Button
+    ========================== */
+
+    .menu-toggle {
+
+        display: flex;
+
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        border: 1px solid rgba(255,255,255,.15);
+
+        border-radius: 50%;
+
+        background: rgba(255,255,255,.05);
+
+        cursor: pointer;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 5px;
+
+        z-index: 1001;
+
+    }
+
+    .menu-toggle span {
+
+        width: 17px;
+
+        height: 2px;
+
+        background: white;
+
+        border-radius: 2px;
+
+        transition:
+            transform .5s cubic-bezier(.22,1,.36,1),
+            opacity .3s ease;
+
+    }
+
+
+    /* ==========================
+       Hamburger Animation
+    ========================== */
+
+    .menu-toggle.open span:nth-child(1) {
+
+        transform: translateY(7px) rotate(45deg);
+
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+
+        opacity: 0;
+
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+
+        transform: translateY(-7px) rotate(-45deg);
+
+    }
+
+
+    /* ==========================
+       Mobile Navigation
+    ========================== */
 
     .nav-links {
 
-        position:absolute;
+        position: absolute;
 
-        top:calc(100% + 10px);
+        top: calc(100% + 10px);
 
-        left:0;
+        left: 0;
 
-        width:100%;
+        width: 100%;
 
-        padding:15px 20px;
+        padding: 12px 20px;
 
-        display:flex;
+        display: flex;
 
-        flex-direction:column;
+        flex-direction: column;
 
-        gap:0;
+        gap: 0;
 
-        background:rgba(15,15,15,.96);
+        background: rgba(15,15,15,.88);
 
-        backdrop-filter:blur(20px);
+        backdrop-filter: blur(20px);
 
-        -webkit-backdrop-filter:blur(20px);
+        -webkit-backdrop-filter: blur(20px);
 
-        border:1px solid rgba(255,255,255,.12);
+        border: 1px solid rgba(255,255,255,.10);
 
-        border-radius:16px;
+        border-radius: 16px;
 
-        opacity:0;
+        opacity: 0;
 
-        visibility:hidden;
+        visibility: hidden;
 
-        pointer-events:none;
+        pointer-events: none;
 
-        transform:translateY(-10px);
+        transform: translateY(-12px);
 
         transition:
-
-            opacity .4s ease,
-
-            transform .4s ease,
-
-            visibility .4s ease;
+            opacity .45s ease,
+            transform .55s cubic-bezier(.22,1,.36,1),
+            visibility .45s ease;
 
     }
-
 
     .nav-links.open {
 
-        opacity:1;
+        opacity: 1;
 
-        visibility:visible;
+        visibility: visible;
 
-        pointer-events:auto;
+        pointer-events: auto;
 
-        transform:translateY(0);
+        transform: translateY(0);
 
     }
-
 
     .nav-links li {
 
-        width:100%;
+        width: 100%;
 
-        list-style:none;
+        list-style: none;
 
     }
-
 
     .nav-links a {
 
-        display:block;
+        display: block;
 
-        width:100%;
+        width: 100%;
 
-        padding:15px 5px;
+        padding: 16px 4px;
 
-        font-size:14px;
+        font-size: 14px;
 
-        border-bottom:1px solid rgba(255,255,255,.07);
+        border-bottom: 1px solid rgba(255,255,255,.07);
+
+    }
+
+    .nav-links li:last-child a {
+
+        border-bottom: none;
 
     }
 
 
-    .nav-links li:last-child a {
+    /* ==========================
+       Hero
+    ========================== */
 
-        border-bottom:none;
+    .hero {
+
+        min-height: 100svh;
+
+    }
+
+    .hero-content {
+
+        width: 100%;
+
+        padding: 120px 25px 70px;
+
+        justify-content: center;
+
+        align-items: flex-start;
+
+    }
+
+    .hero-left {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 52px;
+
+        line-height: .95;
+
+        letter-spacing: 3px;
+
+    }
+
+    .subtitle {
+
+        font-size: 11px;
+
+        letter-spacing: 3px;
+
+    }
+
+    .description {
+
+        max-width: 100%;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* ==========================
+       Buttons
+    ========================== */
+
+    .buttons {
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+
+    }
+
+    .btn,
+    .btn-outline {
+
+        padding: 12px 22px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* ==========================
+       ABOUT
+    ========================== */
+
+    .about {
+
+        min-height: auto;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 110px 25px 100px;
+
+    }
+
+    .about > img {
+
+        display: block;
+
+        width: min(100%, 320px);
+
+        height: auto;
+
+        margin-bottom: 40px;
+
+        border-radius: 18px;
+
+        object-fit: cover;
+
+    }
+
+    .about .hero-right {
+
+        display: none;
+
+    }
+
+    .about .container {
+
+        width: 100%;
+
+        max-width: 700px;
+
+    }
+
+    .about h2 {
+
+        font-size: 36px;
+
+        line-height: 1.1;
+
+        margin-bottom: 25px;
+
+    }
+
+    .about p {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: 16px;
+
+        line-height: 1.85;
+
+        text-align: left;
+
+        overflow-wrap: break-word;
+
+        word-break: normal;
+
+    }
+
+
+    /* ==========================
+       Works
+    ========================== */
+
+    .works {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 110px 25px;
+
+    }
+
+    .works-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+    .works h2 {
+
+        font-size: 36px;
+
+        margin-bottom: 40px;
+
+    }
+
+    .card {
+
+        width: 100%;
+
+        padding: 28px 24px;
+
+    }
+
+
+    /* ==========================
+       Research
+    ========================== */
+
+    .research {
+
+        width: 100%;
+
+        padding: 110px 25px;
+
+    }
+
+    .research-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+    .research h2 {
+
+        font-size: 36px;
+
+        margin-bottom: 40px;
+
+    }
+
+    .research-card {
+
+        width: 100%;
+
+        padding: 28px 24px;
+
+    }
+
+
+    /* ==========================
+       Events
+    ========================== */
+
+    .events {
+
+        width: 100%;
+
+        padding: 110px 25px;
+
+    }
+
+    .event {
+
+        width: 100%;
+
+        margin: 20px 0;
+
+        padding: 25px 20px;
+
+    }
+
+
+    /* ==========================
+       Contact
+    ========================== */
+
+    .contact {
+
+        width: 100%;
+
+        padding: 120px 25px 80px;
+
+    }
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+    .contact h2 {
+
+        font-size: 48px;
+
+    }
+
+    .contact-description {
+
+        font-size: 15px;
+
+        line-height: 1.8;
+
+    }
+
+    .contact-email {
+
+        font-size: 16px;
+
+        max-width: 100%;
+
+        word-break: break-word;
+
+    }
+
+
+    /* ==========================
+       Footer
+    ========================== */
+
+    footer {
+
+        padding: 30px 20px;
+
+    }
+
+
+    /* ==========================
+       Back To Top
+    ========================== */
+
+    .back-to-top {
+
+        right: 18px;
+
+        bottom: 18px;
+
+        width: 44px;
+
+        height: 44px;
 
     }
 
